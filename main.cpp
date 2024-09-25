@@ -101,7 +101,7 @@ int main(int argc, const char* argv[]){
                     right = false;
                     break;
 
-                case SDLK_w: r.y -= 64; break;
+                case SDLK_w: r.y -= 64; if(r.y < 0){r.y = 32*19;};break;
                 case SDLK_s: r.y += 32; if(r.y > 32*19){r.y = 32*19;}; break;
                 }
             }
